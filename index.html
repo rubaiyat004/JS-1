@@ -1,0 +1,29 @@
+<html>
+  <style>
+    .button{
+      background-color: aliceblue rgb(248, 248, 248);
+    }
+
+    .button--active {
+      background-color: red;
+    }
+  </style>
+
+<body>
+
+<h1>HTML DOM Events</h1>
+<h2>The onclick Event</h2>
+
+<button id="button" class="button" type="button" name="button">Click me</button>
+
+<script>
+const myButton = document.querySelector('.button');
+myButton.onclick = function() {
+myButton.classList.toggle('button--active');
+  
+}
+
+</script>
+
+</body>
+</html>
